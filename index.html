@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Up labs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/6f34f904f9.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,900;1,100&display=swap" rel="stylesheet">
+	<style>
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin:0px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex {
+			display: flex;
+		}
+		.column-1 {
+			width: 12%;
+			height: 800px;
+			background-color: #FFFFFF;
+			padding: 15px;
+
+		}
+		.column-1 i{
+			padding-left:10px;
+		}
+
+		.PELIO-Align{
+			margin: 0px;
+			padding-left: 7px;
+			color: #2C80FF;
+		}
+		.border{
+			width: 150px;
+			border-radius: 8px;
+			background-color: #0E6EFF; 
+			color:#DCEAFF;
+			height:35px;
+			display: flex;
+			align-items: center;
+		}
+		.align{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 212px;
+			padding-top: 23px;
+			font-size: 13px;
+		}
+		.color{
+			color: #9A9C9F;
+			font-size: 12px;
+		}
+		.column-2{
+			width: 88%;
+			height:890px;
+			background-color:#F5F5F5;
+			padding: 15px;
+		}
+		.header{
+			display: flex;
+			justify-content:space-between; 
+		}
+		.search-align{
+			background-color:white;
+			height:30px;
+			width:22%;
+			border-radius:9px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.search-align span{
+			color:#B0B2B4;
+			font-size: 10px;
+			padding-left: 13px;
+		}
+		.search-align i{
+			color:#9EA0A3;
+			padding-right: 13px;
+		}
+		.img-align{
+			display: flex;
+			justify-content:space-between;
+			width:19%;
+		}
+		.img-align i{
+			color:#828589;
+		}
+		.number-align{
+			padding-left:15px;
+			color:#EAFAF3;
+		}
+		.invoice-align{
+			padding-left:30px;
+			font-size:10px;
+			color:#8DE3BB;
+		}
+		.invoice-align1{
+			padding-left:30px;
+			font-size:10px;
+			color:#70DAFF;
+		}
+		.invoice-align2{
+			padding-left:30px;
+			font-size:10px;
+			color:#FFE5A7;
+		}
+		.invoice-align3{
+			padding-left:30px;
+			font-size:10px;
+			color:#FFD0C7;
+		}
+		.flex-align{
+			display: flex;
+			padding-top:30px;
+		}
+		.bill{
+			width:25%;
+			height:80px;
+			background-color:#00C068;
+			color:white;
+			border-radius:16px;
+			padding-left:25px;
+			padding-top:33px;
+		}
+		.bill-1{
+			width:25%;
+			height:80px;
+			background-color:#01BEFF;
+			color:white;
+			border-radius:16px;
+			padding-left:25px;
+			margin-left:22px;
+			padding-top:33px;
+		}
+		.bill-2{
+			width:25%;
+			height: 80px;
+			background-color:#FFBF26;
+			color:white;
+			border-radius:16px;
+			padding-top: 33px;
+			padding-left:25px;
+			margin-left:22px;
+		}
+		.bill-3{
+			width:25%;
+			height:80px;
+			background-color:#FF684D;
+			color:white;
+			border-radius:16px;
+			padding-top:33px;
+			padding-left:22px;
+			margin-left:22px;
+		}
+		.bill-align{
+			display: flex;
+
+		}
+		.Transactions{
+			width:75%;
+			height:410px;
+			background-color:white;
+			border-radius:15px;
+
+		}
+		.Transactions-content{
+			display:flex;
+			justify-content:space-between; 
+		}
+		.border-align{
+			background-color:blue;
+			height:27px;
+			width:31px;
+			border-radius:5px;
+		}
+		.border-align1{
+			background-color:#FFBF26;
+			height:27px;
+			width:31px;
+			border-radius:5px;
+		}
+		.border-align2{
+			background-color:#00D171;
+			height:27px;
+			width:31px;
+			border-radius:5px;
+		}	
+		.border-align3{
+			background-color:#FF684D ;
+			height:27px;
+			width:31px;
+			border-radius:5px;
+		}
+		.astrology-align{
+			padding-left:13px;
+			font-size:11px;
+			color:#474A4D;
+		}
+		.no-align{
+			color:blue;
+			font-size:9px;
+			padding-left:12px;
+		}
+		.flex-1{
+			display:flex;
+			flex-direction:column;
+		}
+		.min-align{
+			color:#C2C3C5;
+			font-size:10px;
+		}
+		.android-color{
+			color:#C2C3C5;
+		}
+		.Transactions-content1{
+			display:flex;
+			justify-content:space-between;
+			padding-top:73px; 
+			font-size:10px;
+		}
+		.nextpage-border{
+			height:29px;
+			width:28px;
+			border-radius:6px;
+			background-color:#0E6EFF;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			color:white;
+		}
+		.nextpage-border1{
+			height:28px;
+			width:25px;
+			border-radius:6px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			color:#ACADB0;
+			border:1px solid;
+		}
+		.Transactions-content2{
+			display:flex;
+			justify-content:space-between;
+			width:20%;
+		}
+		.latest-content-align{
+			width:95%;
+			margin:auto;
+		}
+		.card{
+			height:140px;
+			width:277px;
+			background-color:#6A9DFF;
+			border-radius:12px;
+			color:white;
+			padding:14px;
+			font-size:12px;
+		}
+		.card-padding{
+			padding-top:19px;
+		}
+		.valid-align{
+			padding-top:63px;
+		}
+		.balance{
+			height:240px;
+			width:310px;
+			background-color:white;
+			border-radius:12px;
+			padding:14px;
+			font-size:15px;
+			margin-left:24px;
+		}
+		.balance1{
+			height:240px;
+			width:377px;
+			background-color:white;
+			border-radius:12px;
+			padding:14px;
+			font-size:15px;
+			margin-left:24px;
+		}
+		.month-align{
+			height:70px;
+			width:145px;
+			background-color:#0E6EFF;
+			border-radius:9px;
+			color:white;
+			font-size: 15px;
+		}
+		.month-align1{
+			height:70px;
+			width:145px;
+			background-color:#F5F5F5;
+			border-radius:9px;
+			font-size: 15px;
+			
+		}
+		
+		.sun{
+			height:100px;
+			width:33px;
+			background-color:#C4F3E0;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+		}
+		.sun-1{
+			height:100px;
+			width:33px;
+			background-color:#C4F3E0;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+			margin-left:22px;
+		}
+		.sun-2{
+			height:100px;
+			width:33px;
+			background-color:#C4F3E0;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+			margin-left:22px;
+		}
+		
+		.sun-1-graph{
+			height:100px;
+			width:33px;
+			background-color:#00D171;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+			margin-top:27px;
+		}
+		.sun-1-graph-color1{
+			height:100px;
+			width:33px;
+			background-color:#FF684D;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+			margin-top:27px;
+		}
+		.sun-1-graph-color2{
+			height:100px;
+			width:33px;
+			background-color:#01BEFF;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+			margin-top:27px;
+		}
+		.sun-1-graph-color3{
+			height:100px;
+			width:33px;
+			background-color:#0E6EFF;
+			border-top-left-radius:19px;
+			border-top-right-radius:19px;
+			margin-top:27px;
+		}
+		.no-align-1{
+			margin-left:48px;
+		}
+		.small{
+			height: 8px;
+			width:33px;
+			background-color: #00D171;
+			border-radius: 3px;
+		}
+		.small-1{
+			height: 8px;
+			width:33px;
+			background-color: #FF684D;
+			border-radius: 3px;
+		}
+		.small-2{
+			height: 8px;
+			width:33px;
+			background-color: #01BEFF;
+			border-radius: 3px;
+		}
+		.small-align{
+			margin-left:27px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 131px;
+		}
+
+		.dolore-font-align{
+			font-size: 11px;
+		}
+		.day{
+			display: flex;
+			justify-content: space-between;
+			width: 253px;
+		}
+		.Transaction-border{
+			height:80px;
+			width:304px;
+			background-color: white;
+			border-radius: 13px;
+			
+		}
+		.Transaction-border-align{
+			font-size: 11px;
+			color:#A8AAAD;
+		}
+		.statistics{
+			width:25%;
+			height:410px;
+			background-color:white;
+			border-radius:15px;
+			margin-left: 8px;
+		}
+		.number-stat{
+			display: flex;
+			flex-direction: column;
+			font-size: 10px;
+
+		}
+		.graph-1{
+			height:32px;
+			width:11px;
+			margin-top: 68px;
+			margin-left: 14px;
+			position: relative;
+
+		}
+		.graph-2{
+			height:134px;
+			width:11px;
+			margin-top: 15px;
+			margin-left: 14px;
+			position: relative;
+		}
+		.graph-3{
+			height:68px;
+			width:11px;
+			position: relative;
+			margin-top: 49px;
+			margin-left: 14px;
+		}
+		.graph-4{
+			height:83px;
+			width:11px;
+			position: relative;
+			margin-top: 41px;
+			margin-left: 14px;
+		}
+		.graph-5{
+			height:59px;
+			width:11px;
+			position: relative;
+			margin-top: 54px;
+			margin-left: 14px;
+		}
+		.graph-6{
+			height:69px;
+			width:11px;
+			position: relative;
+			margin-top: 48px;
+			margin-left: 14px;
+		}
+		.border-1{
+			height:50%;
+			background-color:#00D171 ;
+		}
+		.border-2{
+			height: 13px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: white;
+			width: 100%;
+			border-radius: 20px;
+			font-size: 8px;
+			text-align: center;
+		}
+		.border-3{
+			height:50%;
+			background-color: blue;
+		}	
+		.border-circle-1{
+			height:50%;
+			background-color:#00D171 ;
+		}
+		.border-circle-2{
+			height: 13px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: white;
+			width: 100%;
+			border-radius: 20px;
+			font-size: 8px;
+			text-align: center;
+		}
+		.border-circle-3{
+			height:50%;
+			background-color:white;
+		}	
+		.color-align{
+			display: flex;
+			justify-content: space-between;
+			max-width: 81%;
+		}
+		.circle{
+			height:12px;
+			width:12px;
+			border-radius:9px;
+			background-color: #01D172;
+		}
+		.green-align{
+			font-size: 10px;
+			padding-left: 5px;
+		}
+		.circle-1{
+			height:12px;
+			width:12px;
+			border-radius:9px;
+			background-color: blue;
+		}
+		.circle-2{
+			height:12px;
+			width:12px;
+			border-radius:9px;
+			background-color: yellow;
+		}
+		.circle-3{
+			height:12px;
+			width:12px;
+			border-radius:9px;
+			background-color: red;
+		}
+		.stat-align{
+			padding: 20px;
+		}
+		.payment-align{
+			font-size: 10px;
+		}
+		.dollor{
+			font-size: 16px;
+		}
+		
+		.header-content-align{
+			font-size: 20px;
+		}
+		.month{
+			padding: 11px;
+		}
+		.color-month{
+			color:#9EC4FF;
+			font-size: 11px
+		}
+		.transaction-align{
+			padding: 14px;
+		}
+		.flex-2{
+			display: flex;
+			justify-content: space-between;
+		}
+		.border-top{
+			height:23px;
+			width:23px;
+			border-radius: 7px;
+			background-color:#E82626;
+		}
+		.mail-color{
+			font-size: 9px;
+			color:#ADAFB1;
+		}
+		.name{
+			font-size:15px;
+		}
+		.circle-align{
+			height:10px;
+			width:10px;
+			border-radius: 5px;
+			background-color: #1371FF;
+		}
+		.over{
+			color: #DDE0E4;
+			font-size: 12px;
+			padding-left: 6px;
+			margin: -2px;
+		}
+		.flex-3{
+			display: flex;
+			justify-content: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="flex ">
+		<div class="column-1">
+			<div class="flex">
+				<i class="fas fa-user-circle"></i>
+				<h4 class="PELIO-Align">PELIO</h4>
+			</div>
+			<div class="align">
+				<div class="border">
+					<div>
+						<i class="fas fa-home"></i>
+						<span >&nbsp;Dashboard</span>
+					</div>
+				</div>
+				<div class="color">
+					<i class="fas fa-wallet"></i>
+					<span>&nbsp;My Wallet</span>
+				</div>
+				<div class="color">
+					<i class="fas fa-money-bill-wave-alt"></i>
+					<span>&nbsp;Payment</span>
+				</div>
+				<div class="color">
+					<i class="fas fa-wallet"></i>
+					<span>&nbsp;Invoice</span>
+				</div>
+				<div class="color">
+					<i class="fas fa-cog"></i>
+					<span>&nbsp;Setting</span>
+				</div>
+				<div class="color">
+					<i class="fas fa-ad"></i>
+					<span>&nbsp;Transactions</span>
+				</div>
+			</div><br>
+			<div>
+				<p class="payment-align"><b>Payment Admin Dashboard</b></p>
+				<span class="color">©  2010-2021 All Rights Reserved.</span>
+			</div>
+		</div>
+
+		<div class="column-2">
+			<div class="header">
+				<div>
+					<i class="fas fa-th-large"></i>
+					<span class="header-content-align">&nbsp;<b>Dashboard</b></span>
+				</div>
+				<div class="search-align">
+					<span>Search Here..</span>
+					<i class="fas fa-search "></i>
+				</div>
+				<div class="img-align">
+					<i class="far fa-bell"></i>
+					<i class="far fa-envelope"></i>
+					<div class="border-top" >
+					</div>
+					<div>
+						<span class="name"><b>Hi&nbsp;Dhoni</b></span><br>
+						<span class="mail-color">dhoni@gmail.com</span>
+					</div>
+					<i class="fas fa-sort-down"></i>
+				</div>
+			</div>
+
+			<div class="flex-align">
+				<div class="bill">
+
+					<div class=" bill-align">
+						<i class="far fa-check-square "></i>
+						<span class="number-align"><b>32,568</b></span>
+					</div>
+					<span class="invoice-align" >Total Invoices</span>
+
+				</div>
+				<div class="bill-1  ">
+
+					<div class=" bill-align">
+						<i class="far fa-check-square "></i>
+						<span class="number-align"><b>8,558</b></span>
+					</div>
+					<span class="invoice-align1" >Paid Invoices</span>
+
+				</div>
+				<div class="bill-2 ">
+
+					<div class=" bill-align">
+						<i class="far fa-check-square "></i>
+						<span class="number-align"><b>2,568</b></span>
+					</div>
+					<span class="invoice-align2" >Unpaid Invoices</span>
+
+				</div>
+				<div class="bill-3 " >
+
+					<div class=" bill-align">
+						<i class="far fa-check-square "></i>
+						<span class="number-align"><b>688</b></span>
+					</div>
+					<span class="invoice-align3" >Total Invoices Sent</span>
+
+				</div>
+			</div>
+			<br>
+			<div class="flex">
+				<div class="Transactions">
+					<div class="latest-content-align">
+						<div>
+							<h4>Latest Transaction</h4>
+						</div>
+						<div  class="Transactions-content">
+							<div style="width:20%">
+								<div class="flex">
+									<div class="border-align">
+									</div>
+									<div class="flex-1">
+										<span class="no-align">#KLA-237-393-950</span>
+										<span class="astrology-align"><b>Code Astrology.com</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:15%">
+								<div class="flex">
+									<i class="fas fa-money-check-alt "></i>
+									<div class="flex-1">
+										<span class="no-align" >Amount</span>
+										<span class="astrology-align"><b>$ 4,67,859</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:5%">
+								<span class="min-align">5&nbsp;min&nbsp;ago</span>
+							</div>
+							<div style="width:10%">
+								<div class="android-color">
+									<i class="fas fa-print"></i>
+								</div>
+							</div>
+							<div style="width:5%"class="android-color" >
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+						</div><br><br>
+
+						<div  class="Transactions-content">
+							<div style="width:20%">
+								<div class="flex">
+									<div class="border-align1">
+									</div>
+									<div class="flex-1">
+										<span class="no-align">#KLA-237-393-950</span>
+										<span class="astrology-align"><b>HSJ Express.com</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:15%">
+								<div class="flex">
+									<i class="fas fa-money-check-alt "></i>
+									<div class="flex-1">
+										<span class="no-align" >Amount</span>
+										<span class="astrology-align"><b>$ 89,859</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:5%">
+								<span class="min-align">5&nbsp;min&nbsp;ago</span>
+							</div>
+							<div style="width:10%">
+								<div class="android-color">
+									<i class="fas fa-print"></i>
+								</div>
+							</div>
+							<div style="width:5%" class="android-color">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+						</div>
+						<br><br>
+
+
+						<div  class="Transactions-content">
+							<div style="width:20%">
+								<div class="flex">
+									<div class="border-align2">
+									</div>
+									<div class="flex-1">
+										<span class="no-align">#KLA-237-393-950</span>
+										<span class="astrology-align"><b>Inventiveshamim.inc</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:15%">
+								<div class="flex">
+									<i class="fas fa-money-check-alt "></i>
+									<div class="flex-1">
+										<span class="no-align" >Amount</span>
+										<span class="astrology-align"><b>$ 3,43,67,859</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:5%">
+								<span class="min-align">5&nbsp;min&nbsp;ago</span>
+							</div>
+							<div style="width:10%">
+								<div class="android-color">
+									<i class="fas fa-print"></i>
+								</div>
+							</div>
+							<div style="width:5%" class="android-color">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+						</div>
+
+						<br><br>
+						<div  class="Transactions-content">
+							<div style="width:20%">
+								<div class="flex">
+									<div class="border-align3">
+									</div>
+									<div class="flex-1">
+										<span class="no-align">#KLA-237-393-950</span>
+										<span class="astrology-align"><b>Avadforlife.inc</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:15%">
+								<div class="flex">
+									<i class="fas fa-money-check-alt "></i>
+									<div class="flex-1">
+										<span class="no-align" >Amount</span>
+										<span class="astrology-align"><b>$ 2,07,859</b></span>
+									</div>
+								</div>
+							</div>
+							<div style="width:5%">
+								<span class="min-align">5&nbsp;min&nbsp;ago</span>
+							</div>
+							<div style="width:10%">
+								<div class="android-color">
+									<i class="fas fa-print"></i>
+								</div>
+							</div>
+							<div style="width:5%" class="android-color">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+						</div>
+						<div class="Transactions-content1">
+							<div>
+								<span>Showing <b>1-4</b>from<b>60</b>Data</span>
+							</div>
+							<div class="Transactions-content2">
+								<div class="nextpage-border1">
+									<span><</span>
+								</div>
+
+								<div class="nextpage-border">
+									<span>1</span>
+								</div>
+								<div class="nextpage-border1">
+									<span>2</span>
+								</div>
+								<div class="nextpage-border1">
+									<span>3</span>
+								</div>
+								<div class="nextpage-border1">
+									<span>></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="statistics">
+					<div class="stat-align">
+						<span><b>Statistics</b></span><br><br>
+						<div class="flex-3">
+							<div class="circle-align">
+							</div>
+							<span class="over">over</span>
+						</div><br>
+						<div class="flex">
+							<div class="number-stat">
+								<span>1000</span><br>
+								<span>750</span><br>
+								<span>500</span><br>
+								<span>250</span><br>
+								<span>0</span><br>
+								<span>250</span><br>
+								<span>500</span><br>
+								<span>750</span><br>
+								<span>1000</span>
+							</div>
+							<div>
+								<div class="graph-1">
+									<div class="border-circle-1"></div>
+									<div class="border-circle-2"><span>1.5</span></div>
+									<div class="border-circle-3"></div>
+								</div>
+							</div>
+							<div>
+								<div class="graph-2" >
+									<div class="border-1"></div>
+									<div class="border-2"><span>2</span></div>
+									<div class="border-3"></div>
+								</div>
+							</div>
+							<div>
+								<div class="graph-3">
+									<div class="border-1"></div>
+									<div class="border-2"><span>2.5</span></div>
+									<div class="border-3"></div>
+								</div>
+							</div>
+							<div>
+								<div class="graph-4">
+									<div class="border-1"></div>
+									<div class="border-2"><span>3</span></div>
+									<div class="border-3"></div>
+								</div>
+							</div>
+							<div>
+								<div class="graph-5">
+									<div class="border-1"></div>
+									<div class="border-2"><span>3.5</span></div>
+									<div class="border-3"></div>
+								</div>
+							</div>
+							<div>
+								<div class="graph-6">
+									<div class="border-1"></div>
+									<div class="border-2"><span>4</span></div>
+									<div class="border-3"></div>
+								</div>
+							</div>
+						</div><br>
+						<div class="flex-3">
+							<div class="circle-align">
+							</div>
+							<span class="over">under</span>
+						</div><br>
+
+						<div class="color-align">
+							<div class="flex">
+								<div class="circle"></div>
+								<span class="green-align">Green</span>
+							</div>				
+							<div class="color-align">
+								<div class="flex">
+									<div class="circle-1"></div>
+									<span class="green-align">Blue</span>
+								</div>		
+							</div>
+						</div><br>
+						<div class="color-align">
+							<div class="flex">
+								<div class="circle-2"></div>
+								<span class="green-align">Yellow</span>
+							</div>				
+							<div class="color-align">
+								<div class="flex">
+									<div class="circle-3"></div>
+									<span class="green-align">Red</span>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex card-padding">
+				<div>
+					<div class="card">
+						<span>Balance</span>	<br><br>
+						<span class="dollor"><b>$ 4,929</b>  </span>
+						<span style="padding-left: 90px;">     ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;3456</span>
+						<div class="valid-align">
+							<span>Valid Thru  &nbsp;&nbsp;Name</span><br>
+							<span>03/23      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Jhon Doe</span>
+						</div>
+					</div><br>
+					<div class="Transaction-border">
+						<div class="transaction-align">
+							<span class="Transaction-border-align">Transactions</span><br>
+							<span ><b>5,793</b></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="balance">
+					<span><b>Balance Details</b></span>	<br><br>
+					<span class="color-month">Total Balance</span><br>
+					<span><b>$ 221,478</b> </span>
+					<div class="flex">
+						<div style="padding-top: 20px;">
+							<div class="month-align">
+								<div class="month">
+									<span class="color-month">Last Month</span><br>
+									<span><b>$ 14,849</b></span>
+								</div>
+							</div>
+						</div>
+						<div style="padding-top: 20px;margin-left: 14px;">
+							<div class="month-align1">
+								<div class="month">
+									<span class="color-month">Expenses</span><br>
+									<span><b>$ 14,849</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="flex">
+						<div style="padding-top: 12px;">
+							<div class="month-align1">
+								<div class="month">
+									<span class="color-month">Taxes</span><br>
+									<span><b>$ 255.25</b></span>
+								</div>
+							</div>
+						</div>
+						<div style="padding-top: 12px;margin-left: 14px;">
+							<div class="month-align1">
+								<div class="month">
+									<span class="color-month">Debt</span><br>
+									<span><b>$ 365,478</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="balance1">
+					<div>
+						<span  class="color-month">Activity</span><br>
+						<span><b>$ 48,284</b></span><br><br>
+						<div class="flex ">
+							<div>
+								<span>&nbsp;&nbsp;287</span>
+							</div>
+							<div class="no-align-1">
+								<span>297</span>
+							</div>
+							<div class="no-align-1">
+								<span>312</span>
+							</div>
+							<div class="no-align-1">
+								<span>176</span>
+							</div>
+						</div><br>
+						<div class="flex-2 ">
+							<div class="sun ">
+								<div class="sun-1-graph">
+								</div>
+							</div>
+							<div class="sun-1">
+								<div class="sun-1-graph-color1">
+								</div>
+							</div>
+							<div class="sun-2">
+								<div class="sun-1-graph-color3">
+								</div>
+							</div>
+							<div class="sun-2 ">
+								<div class="sun-1-graph-color2">
+								</div>
+							</div>
+							<div class="small-align">
+								<div>
+									<div class="small">
+									</div>
+									<span class="dolore-font-align">Dolore sit amet </span>
+								</div>
+								<div>
+									<div class="small-1">
+									</div>
+									<span class="dolore-font-align">Dolore sit amet </span>
+								</div>
+								<div>
+									<div class="small">
+									</div>
+									<span class="dolore-font-align">Dolore sit amet </span>
+								</div>
+							</div>
+						</div>
+						<div class="day">
+							<span>sun</span>
+							<span>mon</span>
+							<span>tue</span>
+							<span>wed</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
